@@ -39,7 +39,7 @@ a { text-underline-offset: .2em; }
 
 h1, h2, h3, .navbar-brand { letter-spacing: -.035em; }
 h1, h2 { font-weight: 800; }
-.container { max-width: 1180px; }
+.container { max-width: 1600px; }
 
 .skip-link {
   position: fixed;
