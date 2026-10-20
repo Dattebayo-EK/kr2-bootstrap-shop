@@ -27,6 +27,10 @@ html {
 html:has(.site-nav.show) { overflow-y: hidden; }
 
 body {
+  display: flex;
+  min-height: 100vh;
+  min-height: 100dvh;
+  flex-direction: column;
   min-width: 320px;
   overflow-x: clip;
   color: var(--dt-ink);
@@ -39,15 +43,7 @@ a { text-underline-offset: .2em; }
 
 h1, h2, h3, .navbar-brand { letter-spacing: -.035em; }
 h1, h2 { font-weight: 800; }
-.container { max-width: 100%; padding-right: 0; padding-left: 0; }
-.site-header > .container,
-.site-footer > .container { padding-right: .75rem; padding-left: .75rem; }
-main.container > .row,
-main.container .row { margin-right: 0; margin-left: 0; }
-main.container > .breadcrumbs,
-main.container > .page-heading,
-main.container > .section,
-main.container > .product-detail { margin-right: .75rem; margin-left: .75rem; }
+.container { max-width: 100%; padding-right: .75rem; padding-left: .75rem; }
 
 .skip-link {
   position: fixed;
@@ -231,6 +227,7 @@ main.container > .product-detail { margin-right: .75rem; margin-left: .75rem; }
 
 /* Общая структура */
 main.container {
+  flex: 1 0 auto;
   padding-top: 2rem;
   padding-bottom: 5rem;
 }
@@ -714,6 +711,7 @@ main.container {
 
 /* Подвал */
 .site-footer {
+  margin-top: auto;
   padding: 2.5rem 0 1.5rem;
   color: rgb(255 255 255 / 72%);
   background: var(--dt-ink);
@@ -748,8 +746,8 @@ main.container {
   right: 1.25rem;
   bottom: 1.25rem;
   display: grid;
-  width: 46px;
-  height: 46px;
+  width: 50px;
+  height: 50px;
   place-items: center;
   color: #fff;
   background: var(--dt-accent);
