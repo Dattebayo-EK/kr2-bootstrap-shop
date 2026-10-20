@@ -39,7 +39,15 @@ a { text-underline-offset: .2em; }
 
 h1, h2, h3, .navbar-brand { letter-spacing: -.035em; }
 h1, h2 { font-weight: 800; }
-.container { max-width: 100%; }
+.container { max-width: 100%; padding-right: 0; padding-left: 0; }
+.site-header > .container,
+.site-footer > .container { padding-right: .75rem; padding-left: .75rem; }
+main.container > .row,
+main.container .row { margin-right: 0; margin-left: 0; }
+main.container > .breadcrumbs,
+main.container > .page-heading,
+main.container > .section,
+main.container > .product-detail { margin-right: .75rem; margin-left: .75rem; }
 
 .skip-link {
   position: fixed;
