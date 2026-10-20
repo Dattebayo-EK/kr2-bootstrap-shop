@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Выберите раздел: смартфоны, наушники или ноутбуки. Девять моделей с подробными характеристиками." name="description"/>
+<title>Каталог техники — ДораТехно</title>
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+<link href="css/custom.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body class="bg-body-tertiary">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="site-header navbar bg-white sticky-top" id="top">
+<div class="container">
+<div class="site-header__inner w-100">
+<a class="site-header__logo navbar-brand" href="index.html">
+<span aria-hidden="true" class="site-header__mark">Д</span>ДораТехно</a>
+<button aria-controls="main-navigation" aria-label="Открыть меню" class="menu-toggle" data-bs-target="#main-navigation" data-bs-toggle="offcanvas" type="button">
+<span class="menu-toggle__label">Меню</span>
+</button>
+<nav aria-label="Основная навигация" class="site-nav offcanvas offcanvas-end" id="main-navigation" tabindex="-1">
+<ul class="site-nav__list navbar-nav flex-wrap gap-lg-1">
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="index.html">Главная</a>
+</li>
+<li class="site-nav__item">
+<a aria-current="page" class="site-nav__link nav-link active" href="catalog.html">Каталог</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="cart.html">Корзина</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="order.html">Заявки</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="delivery.html">Доставка</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="contacts.html">Контакты</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<main class="container" id="main">
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+<a href="index.html">Главная</a>
+<span aria-current="page" class="breadcrumbs__current">Каталог</span>
+</nav>
+<section class="page-heading catalog-heading">
+<h1>Каталог</h1>
+<p>Выберите раздел техники. Внутри находятся товары, фильтры и таблица сравнения моделей.</p>
+</section>
+<nav aria-label="Категории товаров" class="category-list category-menu row g-4">
+<div class="col-12 col-md-4"><a class="category-list__link category-menu__item category-menu__item--phones card h-100 border-0 shadow-sm p-4 text-decoration-none" href="smartphones.html">
+<span aria-hidden="true" class="category-menu__number">01</span>
+<strong>Смартфоны</strong>
+<small>Google, Apple и Samsung</small>
+<span class="category-menu__action">Смотреть 3 модели →</span>
+</a></div>
+<div class="col-12 col-md-4"><a class="category-list__link category-menu__item category-menu__item--audio card h-100 border-0 shadow-sm p-4 text-decoration-none" href="headphones.html">
+<span aria-hidden="true" class="category-menu__number">02</span>
+<strong>Наушники</strong>
+<small>Sony, Bose и Apple</small>
+<span class="category-menu__action">Смотреть 3 модели →</span>
+</a></div>
+<div class="col-12 col-md-4"><a class="category-list__link category-menu__item category-menu__item--notebooks card h-100 border-0 shadow-sm p-4 text-decoration-none" href="notebooks.html">
+<span aria-hidden="true" class="category-menu__number">03</span>
+<strong>Ноутбуки</strong>
+<small>MacBook Air и MacBook Pro</small>
+<span class="category-menu__action">Смотреть 3 модели →</span>
+</a></div>
+</nav>
+
+<section class="section" id="catalog-overview">
+<div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
+<div><p class="eyebrow mb-2">Быстрый обзор</p><h2 class="mb-0">Популярное во всех разделах</h2></div>
+<div aria-label="Фильтр по категории" class="btn-group flex-wrap" data-category-filter="" role="group">
+<button aria-pressed="true" class="btn btn-dark active" data-category="all" type="button">Все</button>
+<button aria-pressed="false" class="btn btn-outline-dark" data-category="phones" type="button">Смартфоны</button>
+<button aria-pressed="false" class="btn btn-outline-dark" data-category="audio" type="button">Наушники</button>
+<button aria-pressed="false" class="btn btn-outline-dark" data-category="notebooks" type="button">Ноутбуки</button>
+</div>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4" data-catalog-preview="">
+<article class="col" data-category="phones"><div class="card h-100 border-0 shadow-sm overflow-hidden"><img alt="Google Pixel 7 Pro 12/128 ГБ" class="card-img-top product-card__image" src="images/google-pixel-7-pro.jpg"/><div class="card-body d-flex flex-column p-4"><span class="badge product-card__badge align-self-start mb-3">В наличии</span><p class="small text-uppercase fw-semibold text-secondary mb-2">Смартфоны</p><h3 class="h5">Google Pixel 7 Pro 12/128 ГБ</h3><p class="text-secondary">Экран 120 Гц, Google Tensor G2 и камера 50 Мп.</p><p class="fs-4 fw-bold mt-auto">39 990 ₽</p><div class="d-grid gap-2"><a class="btn btn-primary" href="product-pixel-7-pro.html">Подробнее</a><button class="btn btn-outline-dark" data-product="pixel-7-pro" type="button">В корзину</button></div></div></div></article>
+<article class="col" data-category="audio"><div class="card h-100 border-0 shadow-sm overflow-hidden"><img alt="Sony WH-1000XM4" class="card-img-top product-card__image" src="images/sony-wh1000xm4.jpg"/><div class="card-body d-flex flex-column p-4"><span class="badge product-card__badge product-card__badge--discount align-self-start mb-3">Скидка</span><p class="small text-uppercase fw-semibold text-secondary mb-2">Наушники</p><h3 class="h5">Sony WH-1000XM4</h3><p class="text-secondary">Активное шумоподавление и до 30 часов работы.</p><p class="fs-4 fw-bold mt-auto">19 990 ₽</p><div class="d-grid gap-2"><a class="btn btn-primary" href="product-sony-wh1000xm4.html">Подробнее</a><button class="btn btn-outline-dark" data-product="sony-wh1000xm4" type="button">В корзину</button></div></div></div></article>
+<article class="col" data-category="notebooks"><div class="card h-100 border-0 shadow-sm overflow-hidden"><img alt="MacBook Air 13″ M2 8/256 ГБ" class="card-img-top product-card__image" src="images/macbook-air-m2-alt.jpg"/><div class="card-body d-flex flex-column p-4"><span class="badge product-card__badge align-self-start mb-3">В наличии</span><p class="small text-uppercase fw-semibold text-secondary mb-2">Ноутбуки</p><h3 class="h5">MacBook Air 13″ M2 8/256 ГБ</h3><p class="text-secondary">Тонкий корпус, Retina-дисплей и до 18 часов работы.</p><p class="fs-4 fw-bold mt-auto">79 990 ₽</p><div class="d-grid gap-2"><a class="btn btn-primary" href="product.html">Подробнее</a><button class="btn btn-outline-dark" data-product="macbook-air-m2-8gb" type="button">В корзину</button></div></div></div></article>
+</div>
+</section>
+<section aria-labelledby="catalog-comparison-title" class="section">
+<div class="section__heading mb-3"><div><p class="eyebrow mb-2">Сравнение</p><h2 id="catalog-comparison-title">Ключевые характеристики</h2></div></div>
+<div class="table-responsive rounded-4 shadow-sm bg-white">
+<table class="table table-striped table-hover align-middle mb-0">
+<thead class="table-dark"><tr><th scope="col">Модель</th><th scope="col">Категория</th><th scope="col">Главное преимущество</th><th scope="col">Цена</th></tr></thead>
+<tbody><tr><th scope="row">Google Pixel 7 Pro</th><td>Смартфоны</td><td>Экран 120 Гц</td><td>39 990 ₽</td></tr><tr><th scope="row">Sony WH-1000XM4</th><td>Наушники</td><td>Шумоподавление</td><td>19 990 ₽</td></tr><tr><th scope="row">MacBook Air M2</th><td>Ноутбуки</td><td>До 18 часов работы</td><td>79 990 ₽</td></tr></tbody>
+</table>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<div class="site-footer__inner">
+<div>
+<a class="site-header__logo" href="index.html">ДораТехно</a>
+</div>
+<nav aria-label="Ссылки в подвале" class="site-footer__links">
+<a href="catalog.html">Каталог</a>
+<a href="order.html">Мои заявки</a>
+<a href="delivery.html">Доставка</a>
+<a href="contacts.html">Контакты</a>
+</nav>
+</div>
+<p class="site-footer__note">© 2026 ДораТехно. Магазин электронной техники.</p>
+</div>
+</footer>
+<a aria-label="Наверх" class="back-to-top" href="#top">↑</a>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

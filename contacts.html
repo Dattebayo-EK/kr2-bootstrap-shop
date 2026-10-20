@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Контакты ДораТехно, часы работы пункта выдачи и форма обращения по заказу." name="description"/>
+<title>Контакты — ДораТехно</title>
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+<link href="css/custom.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body class="bg-body-tertiary">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="site-header navbar bg-white sticky-top" id="top">
+<div class="container">
+<div class="site-header__inner w-100">
+<a class="site-header__logo navbar-brand" href="index.html">
+<span aria-hidden="true" class="site-header__mark">Д</span>ДораТехно</a>
+<button aria-controls="main-navigation" aria-label="Открыть меню" class="menu-toggle" data-bs-target="#main-navigation" data-bs-toggle="offcanvas" type="button">
+<span class="menu-toggle__label">Меню</span>
+</button>
+<nav aria-label="Основная навигация" class="site-nav offcanvas offcanvas-end" id="main-navigation" tabindex="-1">
+<ul class="site-nav__list navbar-nav flex-wrap gap-lg-1">
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="index.html">Главная</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="catalog.html">Каталог</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="cart.html">Корзина</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="order.html">Заявки</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="delivery.html">Доставка</a>
+</li>
+<li class="site-nav__item">
+<a aria-current="page" class="site-nav__link nav-link active" href="contacts.html">Контакты</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<main class="container" id="main">
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+<a href="index.html">Главная</a>
+<span aria-current="page" class="breadcrumbs__current">Контакты</span>
+</nav>
+<section class="page-heading">
+<h1>Контакты</h1>
+<p>Поможем уточнить статус заказа, изменить способ получения или решить вопрос с доставкой.</p>
+</section>
+<section aria-label="Контактная информация" class="contact-grid section row g-4">
+<div class="card-shell col-12 col-md-4"><article class="contact-card card h-100 border-0 shadow-sm p-4">
+<p class="contact-card__label">ПОЧТА</p>
+<h2>Написать нам</h2>
+<p>hello@doratechno.example</p>
+<p class="muted text-secondary">В обращении укажите имя, номер заявки и почту для ответа.</p>
+</article></div>
+<div class="card-shell col-12 col-md-4"><article class="contact-card card h-100 border-0 shadow-sm p-4">
+<p class="contact-card__label">ПУНКТ ВЫДАЧИ</p>
+<h2>Самовывоз</h2>
+<address>Москва, ул. Примерная, 10</address>
+<p class="muted text-secondary">Приходите после подтверждения готовности заказа.</p>
+</article></div>
+<div class="card-shell col-12 col-md-4"><article class="contact-card card h-100 border-0 shadow-sm p-4">
+<p class="contact-card__label">ГРАФИК</p>
+<h2>Каждый день</h2>
+<p>Пн–Пт: 10:00–20:00<br/>Сб–Вс: 11:00–18:00</p>
+<p class="muted text-secondary">Самовывоз и обработка обращений — в часы работы.</p>
+</article></div>
+</section>
+<section class="help-banner section alert alert-primary" id="feedback" role="alert">
+<div>
+<h2>Обратиться по заказу</h2>
+<p>Укажите номер заявки, чтобы мы быстрее нашли ваш заказ.</p>
+</div>
+<button class="button btn btn-primary" id="open-request-dialog" type="button">Написать обращение</button>
+</section>
+<p class="success-message alert alert-success" hidden="" id="request-result" role="alert" tabindex="-1">Обращение принято! Ответим на указанную почту.</p>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="site-footer__inner">
+<div>
+<a class="site-header__logo" href="index.html">ДораТехно</a>
+</div>
+<nav aria-label="Ссылки в подвале" class="site-footer__links">
+<a href="catalog.html">Каталог</a>
+<a href="order.html">Мои заявки</a>
+<a href="delivery.html">Доставка</a>
+<a href="contacts.html">Контакты</a>
+</nav>
+</div>
+<p class="site-footer__note">© 2026 ДораТехно. Магазин электронной техники.</p>
+</div>
+</footer>
+<a aria-label="Наверх" class="back-to-top" href="#top">↑</a>
+<dialog aria-labelledby="dialog-title" class="request-dialog" id="request-dialog">
+<div class="request-dialog__header">
+<h2 id="dialog-title">Обращение по заказу</h2>
+<button aria-label="Закрыть окно" class="request-dialog__close" id="close-request-dialog" type="button">×</button>
+</div>
+<form action="#" class="order-form" data-order-form="" data-result="request-result" method="post" novalidate="">
+<p class="order-form__note">Поля со звёздочкой обязательны.</p>
+<div class="order-form__field mb-3">
+<label class="order-form__label form-label fw-semibold" for="request-name">Имя *</label>
+<input autocomplete="given-name" class="order-form__input form-control" id="request-name" maxlength="60" minlength="2" name="name" placeholder="Иван" required="" type="text"/>
+</div>
+<div class="order-form__field mb-3">
+<label class="order-form__label form-label fw-semibold" for="request-number">Номер заявки *</label>
+<input class="order-form__input form-control" id="request-number" maxlength="30" name="order-number" placeholder="DT-1037" required="" type="text"/>
+</div>
+<div class="order-form__field mb-3">
+<label class="order-form__label form-label fw-semibold" for="request-email">E-mail для ответа *</label>
+<input autocomplete="email" class="order-form__input form-control" id="request-email" name="email" placeholder="name@example.com" required="" type="email"/>
+</div>
+<div class="order-form__field mb-3">
+<label class="order-form__label form-label fw-semibold" for="request-comment">Сообщение *</label>
+<textarea class="order-form__input form-control" id="request-comment" maxlength="1000" minlength="5" name="comment" placeholder="Опишите ваш вопрос по заявке" required="" rows="4"></textarea>
+</div>
+<div class="order-form__actions">
+<button class="button btn btn-primary" type="submit">Отправить обращение</button>
+</div>
+</form>
+</dialog>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

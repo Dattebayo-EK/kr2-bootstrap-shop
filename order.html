@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Оформите заявку на технику, выберите способ получения и посмотрите историю заказов." name="description"/>
+<title>Оформление и история заявок — ДораТехно</title>
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+<link href="css/custom.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body class="bg-body-tertiary">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="site-header navbar bg-white sticky-top" id="top">
+<div class="container">
+<div class="site-header__inner w-100">
+<a class="site-header__logo navbar-brand" href="index.html">
+<span aria-hidden="true" class="site-header__mark">Д</span>ДораТехно</a>
+<button aria-controls="main-navigation" aria-label="Открыть меню" class="menu-toggle" data-bs-target="#main-navigation" data-bs-toggle="offcanvas" type="button">
+<span class="menu-toggle__label">Меню</span>
+</button>
+<nav aria-label="Основная навигация" class="site-nav offcanvas offcanvas-end" id="main-navigation" tabindex="-1">
+<ul class="site-nav__list navbar-nav flex-wrap gap-lg-1">
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="index.html">Главная</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="catalog.html">Каталог</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="cart.html">Корзина</a>
+</li>
+<li class="site-nav__item">
+<a aria-current="page" class="site-nav__link nav-link active" href="order.html">Заявки</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="delivery.html">Доставка</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="contacts.html">Контакты</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<main class="container" id="main">
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+<a href="index.html">Главная</a>
+<span aria-current="page" class="breadcrumbs__current">Заявки</span>
+</nav>
+<section class="page-heading">
+<h1>Заявки</h1>
+<p>Оформите новую заявку или просмотрите историю предыдущих заказов.</p>
+</section>
+<nav aria-label="Разделы заявок" class="page-links">
+<a href="#new-order">Новая заявка</a>
+<a href="#order-history">История заявок</a>
+</nav>
+<p class="success-message alert alert-success" hidden="" id="order-result" role="alert" tabindex="-1">Заявка принята! Мы свяжемся с вами для подтверждения заказа и согласования получения.</p>
+<section class="section" id="new-order">
+<h2>Оформление заявки</h2>
+<div class="order-layout row g-4 align-items-start">
+<form action="#" class="order-form col-lg-8" data-order-form="" data-result="order-result" method="post" novalidate=""><div class="order-form__panel card border-0 shadow-sm p-4 p-lg-5">
+<p class="order-form__note">Товары подставляются автоматически из выбранной модели или вашей корзины.</p>
+<div class="order-form__field mb-3">
+<label class="order-form__label form-label fw-semibold" for="page-product">Товары</label>
+<textarea class="order-form__input order-form__products form-control bg-body-tertiary" id="page-product" name="product" readonly="" rows="5"></textarea>
+</div>
+<div class="order-form__grid row g-3">
+<div class="order-form__field mb-3">
+<label class="order-form__label form-label fw-semibold" for="page-name">Имя *</label>
+<input autocomplete="given-name" class="order-form__input form-control" id="page-name" maxlength="60" minlength="2" name="name" placeholder="Иван" required="" type="text"/>
+</div>
+<div class="order-form__field mb-3">
+<label class="order-form__label form-label fw-semibold" for="page-email">E-mail *</label>
+<input autocomplete="email" class="order-form__input form-control" id="page-email" name="email" placeholder="name@example.com" required="" type="email"/>
+</div>
+<div class="order-form__field mb-3">
+<label class="order-form__label form-label fw-semibold" for="page-phone">Телефон *</label>
+<div class="input-group">
+<span aria-hidden="true" class="input-group-text">☎</span>
+<input autocomplete="tel" class="order-form__input form-control" id="page-phone" inputmode="tel" name="phone" placeholder="88005553535" required="" type="tel"/>
+</div>
+</div>
+<div class="order-form__field mb-3">
+<label class="order-form__label form-label fw-semibold" for="page-date">Удобная дата связи</label>
+<input class="order-form__input form-control" id="page-date" name="date" type="date"/>
+</div>
+</div>
+<div class="order-form__field mb-3">
+<label class="order-form__label form-label fw-semibold" for="page-delivery">Способ получения *</label>
+<select class="order-form__input form-select" id="page-delivery" name="delivery" required="">
+<option value="pickup">Самовывоз</option>
+<option value="courier">Курьерская доставка</option>
+<option value="point">Пункт выдачи</option>
+</select>
+</div>
+<div class="order-form__field mb-3">
+<label class="order-form__label form-label fw-semibold" for="page-comment">Комментарий</label>
+<textarea class="order-form__input order-form__comment form-control" id="page-comment" maxlength="1000" name="comment" placeholder="Адрес доставки, нужное количество или удобное время звонка" rows="4"></textarea>
+</div>
+<div class="order-form__check form-check">
+<input class="form-check-input" id="page-agreement" name="agreement" required="" type="checkbox" value="yes"/>
+<label class="form-check-label" for="page-agreement">Согласен на обработку персональных данных для рассмотрения заявки *</label>
+</div>
+<div class="order-form__actions">
+<button class="button btn btn-primary btn-lg" type="submit">Отправить заявку</button>
+</div>
+</div></form>
+<aside class="order-info col-lg-4"><div class="order-info__panel card border-0 shadow-sm p-4 h-100">
+<h3>Что будет дальше</h3>
+<ol class="order-info__steps">
+<li>Проверим наличие выбранных товаров.</li>
+<li>Свяжемся с вами и уточним детали заказа.</li>
+<li>Подготовим товары к получению.</li>
+</ol>
+<p>Оплата — при получении. Адрес и стоимость доставки согласуем до подтверждения заказа.</p>
+<a href="delivery.html">Условия доставки →</a>
+</div></aside>
+</div>
+</section>
+<section class="section" id="order-history">
+<div class="section__heading">
+<h2>История заявок</h2>
+</div>
+<div class="order-history row g-4">
+<article class="order-history__item card h-100 col-12 col-lg-4">
+<div class="order-history__heading">
+<h3>Заявка №DT-1042</h3>
+<span class="order-status order-status--muted badge text-bg-secondary">Отменён</span>
+</div>
+<p class="muted text-secondary">
+<time datetime="2026-09-22">22.09.2026</time> · Самовывоз</p>
+<a href="product-macbook-pro-14.html">MacBook Pro 14″ M1 Pro 16/512 ГБ</a>
+<p class="order-history__price">1 шт. · 119 990 ₽</p>
+<a href="contacts.html#feedback">Обратиться по заявке →</a>
+</article>
+<article class="order-history__item card h-100 col-12 col-lg-4">
+<div class="order-history__heading">
+<h3>Заявка №DT-1037</h3>
+<span class="order-status order-status--success badge text-bg-success">Получен</span>
+</div>
+<p class="muted text-secondary">
+<time datetime="2026-09-18">18.09.2026</time> · Самовывоз</p>
+<a href="product-iphone-13-pro.html">iPhone 13 Pro 128 ГБ</a>
+<p class="order-history__price">1 шт. · 44 990 ₽</p>
+<a href="contacts.html#feedback">Обратиться по заявке →</a>
+</article>
+<article class="order-history__item card h-100 col-12 col-lg-4">
+<div class="order-history__heading">
+<h3>Заявка №DT-1026</h3>
+<span class="order-status order-status--success badge text-bg-success">Получен</span>
+</div>
+<p class="muted text-secondary">
+<time datetime="2026-09-10">10.09.2026</time> · Самовывоз</p>
+<a href="product-sony-wh1000xm4.html">Sony WH-1000XM4</a>
+<p class="order-history__price">1 шт. · 19 990 ₽</p>
+<a href="contacts.html#feedback">Обратиться по заявке →</a>
+</article>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="site-footer__inner">
+<div>
+<a class="site-header__logo" href="index.html">ДораТехно</a>
+</div>
+<nav aria-label="Ссылки в подвале" class="site-footer__links">
+<a href="catalog.html">Каталог</a>
+<a href="order.html">Мои заявки</a>
+<a href="delivery.html">Доставка</a>
+<a href="contacts.html">Контакты</a>
+</nav>
+</div>
+<p class="site-footer__note">© 2026 ДораТехно. Магазин электронной техники.</p>
+</div>
+</footer>
+<a aria-label="Наверх" class="back-to-top" href="#top">↑</a>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

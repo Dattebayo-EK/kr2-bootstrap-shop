@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Сравните экраны, процессоры, память и стоимость ноутбуков." name="description"/>
+<title>Ноутбуки — ДораТехно</title>
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/custom.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body class="bg-body-tertiary">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="site-header navbar bg-white sticky-top" id="top">
+<div class="container">
+<div class="site-header__inner w-100">
+<a class="site-header__logo navbar-brand" href="index.html">
+<span aria-hidden="true" class="site-header__mark">Д</span>ДораТехно</a>
+<button aria-controls="main-navigation" aria-label="Открыть меню" class="menu-toggle" data-bs-target="#main-navigation" data-bs-toggle="offcanvas" type="button">
+<span class="menu-toggle__label">Меню</span>
+</button>
+<nav aria-label="Основная навигация" class="site-nav offcanvas offcanvas-end" id="main-navigation" tabindex="-1">
+<ul class="site-nav__list navbar-nav flex-wrap gap-lg-1">
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="index.html">Главная</a>
+</li>
+<li class="site-nav__item">
+<a aria-current="page" class="site-nav__link nav-link active" href="catalog.html">Каталог</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="cart.html">Корзина</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="order.html">Заявки</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="delivery.html">Доставка</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="contacts.html">Контакты</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<main class="container" id="main">
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+<a href="index.html">Главная</a>
+<a href="catalog.html">Каталог</a>
+<span aria-current="page" class="breadcrumbs__current">Ноутбуки</span>
+</nav>
+<section class="page-heading category-page-heading">
+
+<h1>Ноутбуки</h1>
+<p>Сравните экраны, процессоры, память и стоимость ноутбуков.</p>
+</section>
+<section class="catalog-category section" id="notebooks">
+<div class="section__heading"><h2 class="mb-0" data-results-count="">Товары · показано 3</h2></div>
+<div class="catalog-layout row g-4 align-items-start">
+<aside aria-labelledby="notebooks-filter-title" class="catalog-filters col-lg-4 col-xl-3"><div class="filter-panel card border-0 shadow-sm p-4">
+<h3 class="catalog-filters__title" id="notebooks-filter-title">Фильтры</h3>
+<form class="filters-form d-grid gap-4" data-filter-form="" novalidate="">
+<fieldset class="filters-form__group border-0 p-0 m-0">
+<legend class="filters-form__legend fs-6 fw-bold mb-2">Цена, ₽</legend>
+<div class="filters-form__range row g-2">
+<div class="col-6">
+<label class="filters-form__label" for="notebooks-price-from">От</label>
+<input class="filters-form__input form-control" id="notebooks-price-from" min="0" name="price-from" placeholder="0" type="number"/>
+</div>
+<div class="col-6">
+<label class="filters-form__label" for="notebooks-price-to">До</label>
+<input class="filters-form__input form-control" id="notebooks-price-to" min="0" name="price-to" placeholder="100000" type="number"/>
+</div>
+</div>
+</fieldset>
+<fieldset class="filters-form__group border-0 p-0 m-0">
+<legend class="filters-form__legend fs-6 fw-bold mb-2">Диагональ экрана</legend>
+<div class="filters-form__options d-grid gap-2">
+<div class="filters-form__option form-check">
+<input class="form-check-input" id="notebooks-screen-compact" name="filter-1" type="checkbox" value="compact"/>
+<label class="form-check-label" for="notebooks-screen-compact">До 14 дюймов</label>
+</div>
+<div class="filters-form__option form-check">
+<input class="form-check-input" id="notebooks-screen-large" name="filter-1" type="checkbox" value="large"/>
+<label class="form-check-label" for="notebooks-screen-large">14 дюймов</label>
+</div>
+</div>
+</fieldset>
+<fieldset class="filters-form__group border-0 p-0 m-0">
+<legend class="filters-form__legend fs-6 fw-bold mb-2">Оперативная память</legend>
+<div class="filters-form__options d-grid gap-2">
+<div class="filters-form__option form-check">
+<input class="form-check-input" id="notebooks-ram-16" name="filter-2" type="checkbox" value="16"/>
+<label class="form-check-label" for="notebooks-ram-16">8 ГБ</label>
+</div>
+<div class="filters-form__option form-check">
+<input class="form-check-input" id="notebooks-ram-32" name="filter-2" type="checkbox" value="32"/>
+<label class="form-check-label" for="notebooks-ram-32">16 ГБ</label>
+</div>
+</div>
+</fieldset>
+<fieldset class="filters-form__group border-0 p-0 m-0">
+<legend class="filters-form__legend fs-6 fw-bold mb-2">Встроенная память</legend>
+<div class="filters-form__options d-grid gap-2">
+<div class="filters-form__option form-check">
+<input class="form-check-input" id="notebooks-storage-256" name="filter-3" type="checkbox" value="256"/>
+<label class="form-check-label" for="notebooks-storage-256">256 ГБ</label>
+</div>
+<div class="filters-form__option form-check">
+<input class="form-check-input" id="notebooks-storage-512" name="filter-3" type="checkbox" value="512"/>
+<label class="form-check-label" for="notebooks-storage-512">512 ГБ</label>
+</div>
+</div>
+</fieldset>
+<fieldset class="filters-form__group border-0 p-0 m-0">
+<legend class="filters-form__legend fs-6 fw-bold mb-2">Процессор</legend>
+<div class="filters-form__options d-grid gap-2">
+<div class="filters-form__option form-check">
+<input class="form-check-input" id="notebooks-chip-m1-pro" name="filter-4" type="checkbox" value="m1-pro"/>
+<label class="form-check-label" for="notebooks-chip-m1-pro">Apple M1 Pro</label>
+</div>
+<div class="filters-form__option form-check">
+<input class="form-check-input" id="notebooks-chip-m2" name="filter-4" type="checkbox" value="m2"/>
+<label class="form-check-label" for="notebooks-chip-m2">Apple M2</label>
+</div>
+</div>
+</fieldset>
+<button class="btn btn-primary w-100" type="submit">Применить</button><button class="btn btn-outline-dark w-100" type="reset">Сбросить</button>
+</form>
+</div></aside>
+<div class="catalog-products col-lg-8 col-xl-9">
+<div class="products-grid row g-4 row-cols-1 row-cols-xl-2">
+<article class="product-card col" data-filters="compact 8 256 m2" data-price="79990" data-product="macbook-air-m2-8gb"><div class="card h-100 border-0 shadow-sm overflow-hidden"><div class="product-card__media position-relative"><img alt="MacBook Air 13″ M2 8/256 ГБ" class="product-card__image card-img-top img-fluid" height="1440" loading="lazy" src="images/macbook-air-m2-alt.jpg" width="960"/><span class="product-card__badge badge position-absolute top-0 start-0 m-3">В наличии</span></div><div class="card-body d-flex flex-column p-4">
+<p class="product-card__category text-uppercase small fw-semibold text-secondary mb-2">Ноутбуки</p>
+<h3 class="product-card__title card-title h5"><a href="product.html">MacBook Air 13″ M2 8/256 ГБ</a></h3>
+<p class="product-card__description card-text text-secondary">Лёгкий ноутбук с чипом M2 для работы, учёбы и поездок.</p>
+<ul class="product-card__specs small text-secondary ps-3">
+<li>13,6″, Liquid Retina, 2560 × 1664</li>
+<li>Apple M2, 8 ядер</li>
+<li>8 ГБ / SSD 256 ГБ</li>
+</ul>
+<p class="product-card__price fs-4 fw-bold mt-auto mb-3">79 990 ₽</p>
+<div class="product-card__actions d-flex gap-2">
+<a class="btn btn-primary w-100" href="product.html">Подробнее</a>
+
+<button class="btn w-100 btn-outline-dark" type="button">В корзину</button>
+</div>
+</div></div></article>
+<article class="product-card col" data-filters="14 16 512 m1-pro" data-price="119990" data-product="macbook-pro-14-m1"><div class="card h-100 border-0 shadow-sm overflow-hidden"><div class="product-card__media position-relative"><img alt="MacBook Pro 14″ M1 Pro 16/512 ГБ" class="product-card__image card-img-top img-fluid" height="640" loading="lazy" src="images/macbook-pro-m1-candidate.jpg" width="960"/><span class="product-card__badge badge position-absolute top-0 start-0 m-3">В наличии</span></div><div class="card-body d-flex flex-column p-4">
+<p class="product-card__category text-uppercase small fw-semibold text-secondary mb-2">Ноутбуки</p>
+<h3 class="product-card__title card-title h5"><a href="product-macbook-pro-14.html">MacBook Pro 14″ M1 Pro 16/512 ГБ</a></h3>
+<p class="product-card__description card-text text-secondary">Производительный ноутбук с экраном Liquid Retina XDR и чипом M1 Pro.</p>
+<ul class="product-card__specs small text-secondary ps-3">
+<li>14,2″, Liquid Retina XDR, 3024 × 1964</li>
+<li>Apple M1 Pro, 8 ядер</li>
+<li>16 ГБ / SSD 512 ГБ</li>
+</ul>
+<p class="product-card__price fs-4 fw-bold mt-auto mb-3">119 990 ₽</p>
+<div class="product-card__actions d-flex gap-2">
+<a class="btn w-100 btn-primary" href="product-macbook-pro-14.html">Подробнее</a>
+
+<button class="btn w-100 btn-outline-dark" type="button">В корзину</button>
+</div>
+</div></div></article>
+<article class="product-card col" data-filters="compact 16 512 m2" data-price="99990" data-product="macbook-air-m2-16gb"><div class="card h-100 border-0 shadow-sm overflow-hidden"><div class="product-card__media position-relative"><img alt="MacBook Air 13″ M2 16/512 ГБ" class="product-card__image card-img-top img-fluid" height="1440" loading="lazy" src="images/macbook-air-m2-light.jpg" width="960"/><span class="product-card__badge badge position-absolute top-0 start-0 m-3">В наличии</span></div><div class="card-body d-flex flex-column p-4">
+<p class="product-card__category text-uppercase small fw-semibold text-secondary mb-2">Ноутбуки</p>
+<h3 class="product-card__title card-title h5"><a href="product-macbook-air-16gb.html">MacBook Air 13″ M2 16/512 ГБ</a></h3>
+<p class="product-card__description card-text text-secondary">Тот же лёгкий корпус MacBook Air с увеличенной памятью и накопителем.</p>
+<ul class="product-card__specs small text-secondary ps-3">
+<li>13,6″, Liquid Retina, 2560 × 1664</li>
+<li>Apple M2, 8 ядер</li>
+<li>16 ГБ / SSD 512 ГБ</li>
+</ul>
+<p class="product-card__price fs-4 fw-bold mt-auto mb-3">99 990 ₽</p>
+<div class="product-card__actions d-flex gap-2">
+<a class="btn w-100 btn-primary" href="product-macbook-air-16gb.html">Подробнее</a>
+
+<button class="btn w-100 btn-outline-dark" type="button">В корзину</button>
+</div>
+</div></div></article>
+</div>
+</div>
+</div>
+<section class="section category-comparison">
+<h3>Сравнение моделей</h3>
+<div class="table-wrap table-responsive">
+<table class="spec-table table table-striped table-hover align-middle">
+<thead>
+<tr>
+<th scope="col">Модель</th>
+<th scope="col">Экран</th>
+<th scope="col">Память</th>
+<th scope="col">Цена</th>
+</tr>
+</thead>
+<tbody>
+<tr><th scope="row"><a href="product.html">MacBook Air 13″ M2 8/256 ГБ</a></th><td>13,6″, Liquid Retina, 2560 × 1664</td><td>8 ГБ / SSD 256 ГБ</td><td>79 990 ₽</td></tr>
+<tr><th scope="row"><a href="product-macbook-pro-14.html">MacBook Pro 14″ M1 Pro 16/512 ГБ</a></th><td>14,2″, Liquid Retina XDR, 3024 × 1964</td><td>16 ГБ / SSD 512 ГБ</td><td>119 990 ₽</td></tr>
+<tr><th scope="row"><a href="product-macbook-air-16gb.html">MacBook Air 13″ M2 16/512 ГБ</a></th><td>13,6″, Liquid Retina, 2560 × 1664</td><td>16 ГБ / SSD 512 ГБ</td><td>99 990 ₽</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<div class="site-footer__inner">
+<div>
+<a class="site-header__logo" href="index.html">ДораТехно</a>
+</div>
+<nav aria-label="Ссылки в подвале" class="site-footer__links">
+<a href="catalog.html">Каталог</a>
+<a href="order.html">Мои заявки</a>
+<a href="delivery.html">Доставка</a>
+<a href="contacts.html">Контакты</a>
+</nav>
+</div>
+<p class="site-footer__note">© 2026 ДораТехно. Магазин электронной техники.</p>
+</div>
+</footer>
+<a aria-label="Наверх" class="back-to-top" href="#top">↑</a>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

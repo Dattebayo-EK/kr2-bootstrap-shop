@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Сравните экраны, камеры, память и стоимость смартфонов." name="description"/>
+<title>Смартфоны — ДораТехно</title>
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/custom.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body class="bg-body-tertiary">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="site-header navbar bg-white sticky-top" id="top">
+<div class="container">
+<div class="site-header__inner w-100">
+<a class="site-header__logo navbar-brand" href="index.html">
+<span aria-hidden="true" class="site-header__mark">Д</span>ДораТехно</a>
+<button aria-controls="main-navigation" aria-label="Открыть меню" class="menu-toggle" data-bs-target="#main-navigation" data-bs-toggle="offcanvas" type="button">
+<span class="menu-toggle__label">Меню</span>
+</button>
+<nav aria-label="Основная навигация" class="site-nav offcanvas offcanvas-end" id="main-navigation" tabindex="-1">
+<ul class="site-nav__list navbar-nav flex-wrap gap-lg-1">
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="index.html">Главная</a>
+</li>
+<li class="site-nav__item">
+<a aria-current="page" class="site-nav__link nav-link active" href="catalog.html">Каталог</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="cart.html">Корзина</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="order.html">Заявки</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="delivery.html">Доставка</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="contacts.html">Контакты</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<main class="container" id="main">
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+<a href="index.html">Главная</a>
+<a href="catalog.html">Каталог</a>
+<span aria-current="page" class="breadcrumbs__current">Смартфоны</span>
+</nav>
+<section class="page-heading category-page-heading">
+
+<h1>Смартфоны</h1>
+<p>Сравните экраны, камеры, память и стоимость смартфонов.</p>
+</section>
+<section class="catalog-category section" id="phones">
+<div class="section__heading"><h2 class="mb-0" data-results-count="">Товары · показано 3</h2></div>
+<div class="catalog-layout row g-4 align-items-start">
+<aside aria-labelledby="phones-filter-title" class="catalog-filters col-lg-4 col-xl-3"><div class="filter-panel card border-0 shadow-sm p-4">
+<h3 class="catalog-filters__title" id="phones-filter-title">Фильтры</h3>
+<form class="filters-form d-grid gap-4" data-filter-form="" novalidate="">
+<fieldset class="filters-form__group border-0 p-0 m-0"><legend class="filters-form__legend fs-6 fw-bold mb-2">Цена, ₽</legend><div class="filters-form__range row g-2"><div class="col-6"><label class="filters-form__label" for="phones-price-from">От</label><input class="filters-form__input form-control" id="phones-price-from" min="0" name="price-from" placeholder="0" type="number"/></div><div class="col-6"><label class="filters-form__label" for="phones-price-to">До</label><input class="filters-form__input form-control" id="phones-price-to" min="0" name="price-to" placeholder="100000" type="number"/></div></div></fieldset>
+<fieldset class="filters-form__group border-0 p-0 m-0"><legend class="filters-form__legend fs-6 fw-bold mb-2">Диагональ экрана</legend><div class="filters-form__options d-grid gap-2"><div class="filters-form__option form-check"><input class="form-check-input" id="phones-size-small" name="filter-1" type="checkbox" value="small"/><label class="form-check-label" for="phones-size-small">До 6,1 дюйма</label></div><div class="filters-form__option form-check"><input class="form-check-input" id="phones-size-large" name="filter-1" type="checkbox" value="large"/><label class="form-check-label" for="phones-size-large">От 6,7 дюйма</label></div></div></fieldset>
+<fieldset class="filters-form__group border-0 p-0 m-0"><legend class="filters-form__legend fs-6 fw-bold mb-2">Встроенная память</legend><div class="filters-form__options d-grid gap-2"><div class="filters-form__option form-check"><input class="form-check-input" id="phones-storage-128" name="filter-2" type="checkbox" value="128"/><label class="form-check-label" for="phones-storage-128">128 ГБ</label></div><div class="filters-form__option form-check"><input class="form-check-input" id="phones-storage-512" name="filter-2" type="checkbox" value="512"/><label class="form-check-label" for="phones-storage-512">512 ГБ</label></div></div></fieldset>
+<fieldset class="filters-form__group border-0 p-0 m-0"><legend class="filters-form__legend fs-6 fw-bold mb-2">Производитель</legend><div class="filters-form__options d-grid gap-2"><div class="filters-form__option form-check"><input class="form-check-input" id="phones-brand-google" name="filter-3" type="checkbox" value="google"/><label class="form-check-label" for="phones-brand-google">Google</label></div><div class="filters-form__option form-check"><input class="form-check-input" id="phones-brand-apple" name="filter-3" type="checkbox" value="apple"/><label class="form-check-label" for="phones-brand-apple">Apple</label></div><div class="filters-form__option form-check"><input class="form-check-input" id="phones-brand-samsung" name="filter-3" type="checkbox" value="samsung"/><label class="form-check-label" for="phones-brand-samsung">Samsung</label></div></div></fieldset>
+<fieldset class="filters-form__group border-0 p-0 m-0"><legend class="filters-form__legend fs-6 fw-bold mb-2">Операционная система</legend><div class="filters-form__options d-grid gap-2"><div class="filters-form__option form-check"><input class="form-check-input" id="phones-os-android" name="filter-4" type="checkbox" value="android"/><label class="form-check-label" for="phones-os-android">Android</label></div><div class="filters-form__option form-check"><input class="form-check-input" id="phones-os-ios" name="filter-4" type="checkbox" value="ios"/><label class="form-check-label" for="phones-os-ios">iOS</label></div></div></fieldset>
+<fieldset class="filters-form__group border-0 p-0 m-0"><legend class="filters-form__legend fs-6 fw-bold mb-2">Особенности</legend><div class="filters-form__options d-grid gap-2"><div class="filters-form__option form-check"><input class="form-check-input" id="phones-feature-5g" name="filter-5" type="checkbox" value="5g"/><label class="form-check-label" for="phones-feature-5g">Поддержка 5G</label></div><div class="filters-form__option form-check"><input class="form-check-input" id="phones-feature-nfc" name="filter-5" type="checkbox" value="nfc"/><label class="form-check-label" for="phones-feature-nfc">Поддержка NFC</label></div></div></fieldset>
+<button class="btn btn-primary w-100" type="submit">Применить</button><button class="btn btn-outline-dark w-100" type="reset">Сбросить</button>
+</form>
+</div></aside>
+<div class="catalog-products col-lg-8 col-xl-9">
+<div class="products-grid row g-4 row-cols-1 row-cols-xl-2">
+<article class="product-card col" data-filters="large 128 google android 5g nfc" data-price="39990" data-product="pixel-7-pro"><div class="card h-100 border-0 shadow-sm overflow-hidden"><div class="product-card__media position-relative"><img alt="Google Pixel 7 Pro 12/128 ГБ" class="product-card__image product-card__image--contain card-img-top img-fluid" height="561" loading="lazy" src="images/google-pixel-7-pro.jpg" width="960"/><span class="product-card__badge badge position-absolute top-0 start-0 m-3">В наличии</span></div><div class="card-body d-flex flex-column p-4">
+<p class="product-card__category text-uppercase small fw-semibold text-secondary mb-2">Смартфоны</p>
+<h3 class="product-card__title card-title h5"><a href="product-pixel-7-pro.html">Google Pixel 7 Pro 12/128 ГБ</a></h3>
+<p class="product-card__description card-text text-secondary">Смартфон Google с камерой 50 Мп, экраном 120 Гц и чипом Tensor G2.</p>
+<ul class="product-card__specs small text-secondary ps-3">
+<li>6,7″, LTPO OLED, 3120 × 1440</li>
+<li>120 Гц, Google Tensor G2</li>
+<li>12 ГБ / 128 ГБ</li>
+</ul>
+<p class="product-card__price fs-4 fw-bold mt-auto mb-3">39 990 ₽</p>
+<div class="product-card__actions d-flex gap-2">
+<a class="btn btn-primary w-100" href="product-pixel-7-pro.html">Подробнее</a>
+
+
+<button class="btn w-100 btn-outline-dark" type="button">В корзину</button>
+</div>
+</div></div></article>
+<article class="product-card col" data-filters="small 128 apple ios 5g nfc" data-price="44990" data-product="iphone-13-pro"><div class="card h-100 border-0 shadow-sm overflow-hidden"><div class="product-card__media position-relative"><img alt="iPhone 13 Pro 128 ГБ" class="product-card__image card-img-top img-fluid" height="1200" loading="lazy" src="images/iphone-13-pro-blue.jpg" width="960"/><span class="product-card__badge badge position-absolute top-0 start-0 m-3">В наличии</span></div><div class="card-body d-flex flex-column p-4">
+<p class="product-card__category text-uppercase small fw-semibold text-secondary mb-2">Смартфоны</p>
+<h3 class="product-card__title card-title h5"><a href="product-iphone-13-pro.html">iPhone 13 Pro 128 ГБ</a></h3>
+<p class="product-card__description card-text text-secondary">Компактный iPhone с OLED-экраном ProMotion и тройной камерой.</p>
+<ul class="product-card__specs small text-secondary ps-3">
+<li>6,1″, OLED, 2532 × 1170</li>
+<li>ProMotion до 120 Гц, Apple A15</li>
+<li>Накопитель 128 ГБ</li>
+</ul>
+<p class="product-card__price fs-4 fw-bold mt-auto mb-3">44 990 ₽</p>
+<div class="product-card__actions d-flex gap-2">
+<a class="btn w-100 btn-primary" href="product-iphone-13-pro.html">Подробнее</a>
+
+<button class="btn w-100 btn-outline-dark" type="button">В корзину</button>
+</div>
+</div></div></article>
+<article class="product-card col" data-filters="large 512 samsung android 5g nfc" data-price="89990" data-product="galaxy-s23-ultra"><div class="card h-100 border-0 shadow-sm overflow-hidden"><div class="product-card__media position-relative"><img alt="Samsung Galaxy S23 Ultra 12/512 ГБ" class="product-card__image card-img-top img-fluid" height="713" loading="lazy" src="images/galaxy-s23-ultra-lavender.png" width="960"/><span class="product-card__badge badge position-absolute top-0 start-0 m-3">В наличии</span></div><div class="card-body d-flex flex-column p-4">
+<p class="product-card__category text-uppercase small fw-semibold text-secondary mb-2">Смартфоны</p>
+<h3 class="product-card__title card-title h5"><a href="product-galaxy-s23-ultra.html">Samsung Galaxy S23 Ultra 12/512 ГБ</a></h3>
+<p class="product-card__description card-text text-secondary">Большой AMOLED-экран, камера 200 Мп и встроенное перо S Pen.</p>
+<ul class="product-card__specs small text-secondary ps-3">
+<li>6,8″, Dynamic AMOLED 2X, 3088 × 1440</li>
+<li>120 Гц, Snapdragon 8 Gen 2</li>
+<li>12 ГБ / 512 ГБ</li>
+</ul>
+<p class="product-card__price fs-4 fw-bold mt-auto mb-3">89 990 ₽</p>
+<div class="product-card__actions d-flex gap-2">
+<a class="btn w-100 btn-primary" href="product-galaxy-s23-ultra.html">Подробнее</a>
+
+<button class="btn w-100 btn-outline-dark" type="button">В корзину</button>
+</div>
+</div></div></article>
+</div>
+</div>
+</div>
+<section class="section category-comparison">
+<h3>Сравнение моделей</h3>
+<div class="table-wrap table-responsive">
+<table class="spec-table table table-striped table-hover align-middle">
+<thead>
+<tr>
+<th scope="col">Модель</th>
+<th scope="col">Экран</th>
+<th scope="col">Память</th>
+<th scope="col">Цена</th>
+</tr>
+</thead>
+<tbody>
+<tr><th scope="row"><a href="product-pixel-7-pro.html">Google Pixel 7 Pro 12/128 ГБ</a></th><td>6,7″, LTPO OLED, 3120 × 1440</td><td>12 ГБ / 128 ГБ</td><td>39 990 ₽</td></tr>
+<tr><th scope="row"><a href="product-iphone-13-pro.html">iPhone 13 Pro 128 ГБ</a></th><td>6,1″, OLED, 2532 × 1170</td><td>Накопитель 128 ГБ</td><td>44 990 ₽</td></tr>
+<tr><th scope="row"><a href="product-galaxy-s23-ultra.html">Samsung Galaxy S23 Ultra 12/512 ГБ</a></th><td>6,8″, Dynamic AMOLED 2X, 3088 × 1440</td><td>12 ГБ / 512 ГБ</td><td>89 990 ₽</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<div class="site-footer__inner">
+<div>
+<a class="site-header__logo" href="index.html">ДораТехно</a>
+</div>
+<nav aria-label="Ссылки в подвале" class="site-footer__links">
+<a href="catalog.html">Каталог</a>
+<a href="order.html">Мои заявки</a>
+<a href="delivery.html">Доставка</a>
+<a href="contacts.html">Контакты</a>
+</nav>
+</div>
+<p class="site-footer__note">© 2026 ДораТехно. Магазин электронной техники.</p>
+</div>
+</footer>
+<a aria-label="Наверх" class="back-to-top" href="#top">↑</a>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

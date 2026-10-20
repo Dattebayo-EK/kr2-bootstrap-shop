@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Состав корзины, стоимость товаров и переход к оформлению заявки в ДораТехно." name="description"/>
+<title>Корзина — ДораТехно</title>
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/custom.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+</head>
+<body class="bg-body-tertiary">
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="site-header navbar bg-white sticky-top" id="top">
+<div class="container">
+<div class="site-header__inner w-100">
+<a class="site-header__logo navbar-brand" href="index.html">
+<span aria-hidden="true" class="site-header__mark">Д</span>ДораТехно</a>
+<button aria-controls="main-navigation" aria-label="Открыть меню" class="menu-toggle" data-bs-target="#main-navigation" data-bs-toggle="offcanvas" type="button">
+<span class="menu-toggle__label">Меню</span>
+</button>
+<nav aria-label="Основная навигация" class="site-nav offcanvas offcanvas-end" id="main-navigation" tabindex="-1">
+<ul class="site-nav__list navbar-nav flex-wrap gap-lg-1">
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="index.html">Главная</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="catalog.html">Каталог</a>
+</li>
+<li class="site-nav__item">
+<a aria-current="page" class="site-nav__link nav-link active" href="cart.html">Корзина</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="order.html">Заявки</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="delivery.html">Доставка</a>
+</li>
+<li class="site-nav__item">
+<a class="site-nav__link nav-link" href="contacts.html">Контакты</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<main class="container" id="main">
+<nav aria-label="Хлебные крошки" class="breadcrumbs">
+<a href="index.html">Главная</a>
+<span aria-current="page" class="breadcrumbs__current">Корзина</span>
+</nav>
+<section class="page-heading">
+<h1>Корзина</h1>
+<p>Проверьте состав заказа и перейдите к оформлению заявки.</p>
+</section>
+<div class="order-layout section row g-4 align-items-start">
+<section aria-label="Товары в корзине" aria-live="polite" class="cart-list col-lg-8 d-grid gap-3" data-cart-list="">
+</section>
+<aside class="order-info col-lg-4"><div class="order-info__panel card border-0 shadow-sm p-4 h-100">
+<h2>Ваш заказ</h2>
+<dl class="order-totals" data-cart-summary="">
+<div>
+<dt>Товары, <span data-cart-quantity="">0</span> шт.</dt>
+<dd data-cart-subtotal="">0 ₽</dd>
+</div>
+<div>
+<dt>Самовывоз</dt>
+<dd>Бесплатно</dd>
+</div>
+</dl>
+<p class="muted text-secondary">Стоимость доставки зависит от выбранного способа получения и уточняется при подтверждении заявки.</p>
+<div class="d-grid gap-2">
+<a class="button btn btn-primary" data-cart-checkout="" href="order.html?product=cart">Оформить заявку</a>
+<button class="btn btn-outline-dark" data-cart-clear="" hidden="" type="button">Очистить корзину</button>
+</div>
+<p class="order-info__link mt-4">
+<a href="catalog.html">Продолжить выбор →</a>
+</p>
+</div></aside>
+</div>
+</main>
+<footer class="site-footer">
+<div class="container">
+<div class="site-footer__inner">
+<div>
+<a class="site-header__logo" href="index.html">ДораТехно</a>
+</div>
+<nav aria-label="Ссылки в подвале" class="site-footer__links">
+<a href="catalog.html">Каталог</a>
+<a href="order.html">Мои заявки</a>
+<a href="delivery.html">Доставка</a>
+<a href="contacts.html">Контакты</a>
+</nav>
+</div>
+<p class="site-footer__note">© 2026 ДораТехно. Магазин электронной техники.</p>
+</div>
+</footer>
+<a aria-label="Наверх" class="back-to-top" href="#top">↑</a>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
