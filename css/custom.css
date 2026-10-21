@@ -400,6 +400,55 @@ main.container {
 
 .catalog-products .product-card__image { height: 230px; }
 
+.catalog-tabs .nav-link {
+  color: var(--dt-ink);
+  border: 1px solid var(--dt-border);
+}
+
+.catalog-tabs .nav-link:hover,
+.catalog-tabs .nav-link:focus {
+  color: var(--dt-ink);
+  background: var(--dt-accent-soft);
+  border-color: var(--dt-accent-soft);
+}
+
+.catalog-tabs .nav-link.active {
+  color: #fff;
+  background: var(--dt-accent);
+  border-color: var(--dt-accent);
+}
+
+.catalog-carousel { padding-inline: 4rem; }
+
+.catalog-carousel__product {
+  width: min(100%, 1050px);
+  margin-inline: auto;
+}
+
+.catalog-carousel__product > .card { min-height: 380px; }
+.catalog-carousel__product .product-card__media { min-height: 380px; }
+
+.catalog-carousel__product .product-card__image {
+  height: 100%;
+  min-height: 380px;
+}
+
+.catalog-carousel .carousel-control-prev,
+.catalog-carousel .carousel-control-next {
+  width: 3rem;
+  opacity: 1;
+}
+
+.catalog-carousel .carousel-control-prev-icon,
+.catalog-carousel .carousel-control-next-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: .65rem;
+  background-color: var(--dt-ink);
+  background-size: 45%;
+  border-radius: 50%;
+}
+
 .product-card__badge,
 .product-detail__tag {
   color: #7d2c09 !important;
@@ -822,6 +871,14 @@ main.container {
 
   .product-card__image,
   .catalog-products .product-card__image { height: 240px; }
+
+  .catalog-carousel { padding-inline: 2.75rem; }
+  .catalog-carousel__product > .card { min-height: 0; }
+  .catalog-carousel__product .product-card__media { min-height: 0; }
+  .catalog-carousel__product .product-card__image {
+    height: 240px;
+    min-height: 0;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -865,6 +922,14 @@ main.container {
     padding-right: .35rem;
     padding-left: .35rem;
     font-size: .88rem;
+  }
+  .catalog-carousel { padding-inline: 2.25rem; }
+  .catalog-carousel .carousel-control-prev,
+  .catalog-carousel .carousel-control-next { width: 2rem; }
+  .catalog-carousel .carousel-control-prev-icon,
+  .catalog-carousel .carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
   }
   .product-detail__visual { aspect-ratio: 4 / 3; }
   .product-detail h1 { font-size: 2.35rem; }

@@ -117,7 +117,6 @@ document.querySelectorAll('button').forEach((button) => {
     }, 1200);
   });
 });
-
 const cartList = document.querySelector('[data-cart-list]');
 
 const renderCart = () => {
@@ -362,28 +361,4 @@ document.querySelectorAll('[data-filter-form]').forEach((filterForm) => {
 
   filterForm.addEventListener('reset', () => window.setTimeout(applyFilters, 0));
 });
-
-const categoryFilter = document.querySelector('[data-category-filter]');
-
-if (categoryFilter) {
-  const previewCards = document.querySelectorAll('[data-catalog-preview] > [data-category]');
-
-  categoryFilter.addEventListener('click', (event) => {
-    const button = event.target.closest('button[data-category]');
-    if (!button) return;
-
-    const selectedCategory = button.dataset.category;
-    categoryFilter.querySelectorAll('button[data-category]').forEach((item) => {
-      const isActive = item === button;
-      item.classList.toggle('active', isActive);
-      item.classList.toggle('btn-dark', isActive);
-      item.classList.toggle('btn-outline-dark', !isActive);
-      item.setAttribute('aria-pressed', String(isActive));
-    });
-
-    previewCards.forEach((card) => {
-      card.hidden = selectedCategory !== 'all' && card.dataset.category !== selectedCategory;
-    });
-  });
-}
 
