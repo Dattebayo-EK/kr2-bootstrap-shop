@@ -910,10 +910,38 @@ main.container {
   .menu-toggle__label { font-size: .75rem; }
 }
 
-@media (max-width: 239.98px) {
+@media (max-width: 240px) {
+  .site-header .container {
+    width: 100%;
+    padding-inline: .25rem;
+  }
+
   .site-header__inner {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-block: .35rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: start;
+    gap: .25rem;
+    padding-block: .5rem;
+  }
+
+  .site-header__logo {
+    gap: .25rem;
+    font-size: .58rem;
+  }
+
+  .site-header__mark {
+    width: 20px;
+    height: 20px;
+  }
+
+  .menu-toggle {
+    gap: .35rem;
+    padding-block: .25rem;
+    font-size: .6rem;
+  }
+
+  .menu-toggle::before {
+    width: 16px;
+    height: 12px;
   }
 }

@@ -100,15 +100,18 @@ document.querySelectorAll('button').forEach((button) => {
   if (!['В корзину', 'Добавить в корзину'].includes(button.textContent.trim())) return;
 
   button.dataset.cartAdd = '';
+  let feedbackTimeout;
   button.addEventListener('click', () => {
     const product = getProductFromButton(button);
     if (!product) return;
 
     addProductToCart(product);
-    const originalText = button.textContent;
+    const originalText = button.dataset.originalText || button.textContent;
+    button.dataset.originalText = originalText;
     button.textContent = 'Добавлено';
     button.classList.add('active');
-    window.setTimeout(() => {
+    window.clearTimeout(feedbackTimeout);
+    feedbackTimeout = window.setTimeout(() => {
       button.textContent = originalText;
       button.classList.remove('active');
     }, 1200);
