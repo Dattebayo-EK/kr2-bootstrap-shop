@@ -66,14 +66,17 @@
 <a class="btn btn-lg btn-primary" href="order.html?product=galaxy-s23-ultra">Оформить заказ</a>
 <button class="btn btn-lg btn-outline-dark" type="button">В корзину</button>
 </div>
-<nav aria-label="Разделы товара" class="product-detail__links d-flex flex-wrap gap-3">
-<a href="#specifications">Характеристики</a>
-<a href="#package">Комплектация</a>
-<a href="delivery.html">Доставка</a>
+<nav aria-label="Разделы товара" class="product-detail__links d-flex flex-wrap align-items-center gap-3">
+<ul class="nav nav-tabs" id="product-detail-tabs" role="tablist">
+<li class="nav-item" role="presentation"><button aria-controls="specifications" aria-selected="true" class="nav-link active" data-bs-target="#specifications" data-bs-toggle="tab" id="specifications-tab" role="tab" type="button">Характеристики</button></li>
+<li class="nav-item" role="presentation"><button aria-controls="package" aria-selected="false" class="nav-link" data-bs-target="#package" data-bs-toggle="tab" id="package-tab" role="tab" type="button">Комплектация</button></li>
+</ul>
+<a class="product-detail__delivery-link" href="delivery.html">Доставка</a>
 </nav>
 </div>
 </section>
-<section class="section" id="specifications">
+<div class="tab-content product-detail__tab-content">
+<section aria-labelledby="specifications-tab" class="section tab-pane fade show active" id="specifications" role="tabpanel" tabindex="0">
 <h2>Характеристики</h2>
 <div class="specifications-table-wrap">
 <table class="spec-table table table-striped align-middle">
@@ -93,11 +96,12 @@
 </table>
 </div>
 </section>
-<section class="section" id="package">
+<section aria-labelledby="package-tab" class="section tab-pane fade" id="package" role="tabpanel" tabindex="0">
 <h2>Комплектация</h2>
 <p>Samsung Galaxy S23 Ultra, S Pen, кабель USB-C и инструмент для SIM-карты.</p>
 <a href="delivery.html">Доставка и получение →</a>
 </section>
+</div>
 <section class="section">
 <div class="section__heading">
 <h2>Сравните с другими моделями</h2>

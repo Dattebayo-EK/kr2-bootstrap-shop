@@ -249,16 +249,11 @@ if (backToTop) {
   });
 }
 
-const requestDialog = document.getElementById('request-dialog');
+const requestModal = document.getElementById('request-dialog');
 
-if (requestDialog) {
-  document.getElementById('open-request-dialog').addEventListener('click', function () {
+if (requestModal) {
+  requestModal.addEventListener('show.bs.modal', function () {
     document.getElementById('request-result').hidden = true;
-    requestDialog.showModal();
-  });
-
-  document.getElementById('close-request-dialog').addEventListener('click', function () {
-    requestDialog.close();
   });
 }
 
@@ -292,7 +287,7 @@ if (form) {
 
     form.reset();
     if (productSelect && selectedProducts) productSelect.value = selectedProducts;
-    if (requestDialog) requestDialog.close();
+    if (requestModal) bootstrap.Modal.getOrCreateInstance(requestModal).hide();
     result.hidden = false;
     result.focus();
     result.scrollIntoView({ block: 'center' });
