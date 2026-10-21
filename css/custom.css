@@ -31,7 +31,6 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   flex-direction: column;
-  min-width: 320px;
   overflow-x: clip;
   color: var(--dt-ink);
   background: var(--dt-canvas) !important;
@@ -891,4 +890,30 @@ main.container {
   }
 
   .back-to-top { display: none; }
+}
+
+@media (max-width: 359.98px) {
+  .site-header__inner { gap: .5rem; }
+
+  .site-header__logo {
+    gap: .4rem;
+    font-size: .95rem;
+  }
+
+  .site-header__mark {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-toggle { gap: .4rem; }
+  .menu-toggle::before { width: 18px; }
+  .menu-toggle__label { font-size: .75rem; }
+}
+
+@media (max-width: 239.98px) {
+  .site-header__inner {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: .35rem;
+  }
 }
